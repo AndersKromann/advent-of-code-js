@@ -26,4 +26,19 @@ function getFuelForMass(mass){
 
 const expected = part => part === 1 ? 3159380 : 4736213;
 
-module.exports = {solve, expected};
+function runTests(part){
+    res = true;
+    if(part == 1){
+        solve([12], part) == 2 && res
+        solve([14], part) == 2 && res
+        solve([1969], part) == 654 && res
+        solve([100756], part) == 33583 && res
+    }else{
+        solve([12], part) == 2 && res
+        solve([1969], part) == 966 && res
+        solve([100756], part) == 50346 && res
+    }
+    console.log('Test success:', res)    
+}
+
+module.exports = {solve, expected, runTests};

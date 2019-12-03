@@ -30,6 +30,7 @@ for (let day = startDay; day <= endDay; day++){
 
     let solver = require(path + `/solve`);
     for(let part of [1,2]){
+        solver.runTests(part);
         let answer = solver.solve(text, part);
         let expected = solver.expected(part);
         if (answer === expected) {
