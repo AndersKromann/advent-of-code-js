@@ -148,27 +148,27 @@ function runTests(part){
     if(part == 1){
         var l1 = ['R8', 'U5', 'L5', 'D3'];
         var l2 = ['U7', 'R6', 'D4', 'L4'];
-        solvePartOne(l1, l2) == 6 && res
+        res = solvePartOne(l1, l2) == 6 && res
         
         var l1 = ['R75','D30','R83','U83','L12','D49','R71','U7','L72'];
         var l2 = ['U62','R66','U55','R34','D71','R55','D58','R83'];
-        solvePartOne(l1, l2) == 159 && res
+        res = solvePartOne(l1, l2) == 159 && res
 
         var l1 = ['R98','U47','R26','D63','R33','U87','L62','D20','R33','U53','R51'];
         var l2 = ['U98','R91','D20','R16','D67','R40','U7','R15','U6','R7'];
-        solvePartOne(l1, l2) == 135 && res
+        res = solvePartOne(l1, l2) == 135 && res
     }else{
         var l1 = ['R8', 'U5', 'L5', 'D3'];
         var l2 = ['U7', 'R6', 'D4', 'L4'];
-        solvePartTwo(l1, l2) == 20 && res
+        res = solvePartTwo(l1, l2) == 20 && res
         
         var l1 = ['R75','D30','R83','U83','L12','D49','R71','U7','L72'];
         var l2 = ['U62','R66','U55','R34','D71','R55','D58','R83'];
-        solvePartTwo(l1, l2) == 610 && res
+        res = solvePartTwo(l1, l2) == 610 && res
 
         var l1 = ['R98','U47','R26','D63','R33','U87','L62','D20','R33','U53','R51'];
         var l2 = ['U98','R91','D20','R16','D67','R40','U7','R15','U6','R7'];
-        solvePartTwo(l1, l2) == 410 && res
+        res = solvePartTwo(l1, l2) == 410 && res
     }
 
     console.log('Test success:', res)    
